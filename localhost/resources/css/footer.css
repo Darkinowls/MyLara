@@ -1,0 +1,105 @@
+footer {
+  padding-top: 100px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+footer .blockOrange {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  background-color: #FFB801;
+  width: 100vmax;
+  height: 300px;
+}
+footer .blockBlue {
+  z-index: 2;
+  transform: rotate(-5deg);
+  background-color: #0079D1;
+  width: 102vmax;
+  height: 400px;
+}
+footer .foot {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  z-index: 3;
+  padding: 4vmax 6vmax;
+  margin: 0 70px;
+  position: absolute;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+footer .foot ::selection {
+  background: #FFB801;
+  color: #00080e;
+}
+footer .foot .Big {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+footer .foot .Contacts {
+  margin-bottom: 50px;
+}
+footer .foot .Contacts .Nums {
+  margin: 40px 0;
+}
+footer .foot .Contacts .Mails p {
+  margin: 5px;
+}
+footer .foot .Category {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+footer .foot .Category ul {
+  padding-left: 30px;
+  margin: 0;
+}
+footer .foot .Category ul li {
+  padding: 5px 10px;
+}
+footer .foot .Category ul li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .foot .Category ul li div a {
+  color: white;
+  text-decoration: none;
+}
+footer .foot .Category ul li div a:hover {
+  text-decoration: underline;
+}
+footer .foot .Category ul li div span {
+  background-color: #0071C3;
+  padding: 5px 10px;
+  width: 40px;
+  border-radius: 25px;
+  text-align: center;
+}
+footer .foot .Category .Main {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 800px) {
+  footer .blockOrange {
+    height: 500px;
+  }
+  footer .blockBlue {
+    height: 600px;
+  }
+  footer .foot {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+  footer .foot .Category,
+  footer .foot .Contacts {
+    width: 250px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

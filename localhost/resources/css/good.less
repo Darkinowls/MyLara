@@ -1,0 +1,133 @@
+@myblue: #0079d1;
+@myorange: #FFB801;
+@myblack: #00080e;
+
+@import "footer.css";
+@import "header.css";
+
+body{
+    margin: 0;
+}
+
+.Title {
+    display: inline-block;
+    position: relative;
+    font-size: 28px;
+    padding: .5vmax 70px;
+    border-bottom: 4px solid @myorange;
+    margin: 1vmax 6vmax 5vmax 6vmax;
+}
+
+.about {
+
+    margin-top: 75px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .blockBlue {
+        margin: 3vmax -50px 3vmax -50px;
+        display: flex;
+        position: relative;
+        width: fit-content;
+        height: fit-content;
+        background-color: #0079D1;
+        transform: rotate(6deg);
+        z-index: 2;
+
+        .text {
+            flex-direction: column;
+            color: white;
+            padding: 0 9.5vmax;
+            margin: 10vmax 70px;
+            display: flex;
+            position: relative;
+            z-index: 3;
+            transform: rotate(-6deg);
+
+            ::selection {
+                background: @myorange;
+                color: #00080e;
+            }
+        }
+    }
+}
+
+.pop {
+    margin: auto;
+    z-index: 5;
+    border-radius: 50px;
+    border: @myblue dashed 5px;
+    width: fit-content;
+
+    form {
+        margin: 20px 10vmin 50px 10vmin;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+
+        div{
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+    }
+
+    .closer {
+        width: 50px;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        margin: 15px 15px 0 auto;
+
+    }
+
+}
+
+.comment {
+    display: flex;
+    padding: 2.5vmax 0 1vmax 0;
+    border-bottom: 4px solid @myblue;
+    width: 90vmin;
+
+    .pers {
+        width: 100px;
+        height: 100px;
+    }
+
+    .content {
+        margin: 1vmax 0 1vmax 3vmax;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .name {
+            font-size: 18px;
+
+            span {
+                font-size: 14px;
+                color: #333333;
+            }
+        }
+
+        .text {
+            display: inline-block;
+        }
+    }
+
+    .Arr {
+        margin: auto 2vmax;
+        width: 2.5vmax;
+        height: 3vmax;
+    }
+}
