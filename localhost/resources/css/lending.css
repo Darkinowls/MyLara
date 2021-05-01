@@ -1,0 +1,360 @@
+@import "Header/header.css";
+@import "Footer/footer.css";
+body .title {
+  display: flex;
+  font-size: 28px;
+  padding: 5px 10%;
+  border: #FFB801 solid 0;
+  border-bottom-width: 3px;
+  margin: 1vmax auto;
+}
+body .title a {
+  color: white;
+  text-decoration: none;
+}
+body .title a:hover {
+  text-decoration: underline;
+}
+body .button {
+  display: block;
+  margin: 0.5vmax auto 1vmax auto;
+  font-size: 20px;
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  color: #00080e;
+  background-color: #FFB801;
+  transition: all 0.5s;
+  border: 0;
+}
+body .button:focus {
+  outline: none;
+}
+body .button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+}
+body .window {
+  display: flex;
+  z-index: 1;
+  height: fit-content;
+}
+body .window .gradient {
+  position: absolute;
+  background: linear-gradient(#FFB801, #ffffff) no-repeat;
+  height: 80%;
+  width: 100%;
+}
+body .window .ground {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background: #ffffff;
+  margin: 20vmax 0;
+}
+body .window .moto {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap-reverse;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 10vmax 6vmax;
+}
+body .window .moto .description {
+  position: relative;
+  height: fit-content;
+  color: white;
+  background: #0079D1;
+  border-radius: 50px;
+  padding: 30px 70px;
+}
+body .window .moto .description .title {
+  padding: 0;
+  border: 0;
+  margin: 1vmax auto;
+  font-size: 24px;
+}
+body .window .moto .description ::selection {
+  background: #FFB801;
+  color: #00080e;
+}
+body .window .moto .description ul {
+  padding: 0 20px;
+}
+body .window .moto .description ul li {
+  padding-bottom: 10px;
+}
+body .window .moto img {
+  display: flex;
+  position: relative;
+  margin: 0 0 5vmax 4vmax;
+  height: 35vmax;
+  width: 40vmax;
+}
+@media (max-width: 460px) {
+  body .window .moto {
+    margin: 10vmax 0;
+    justify-content: center;
+  }
+  body .window .moto .description {
+    padding: 30px 30px;
+    margin: 0 1vmax;
+  }
+  body .window .moto img {
+    width: 30vmax;
+    height: 25vmax;
+    margin: 0 0 3vmax 0;
+  }
+}
+body .slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+body .slide a {
+  display: flex;
+  text-decoration: none;
+  color: #333333;
+  flex-wrap: wrap;
+}
+body .slide a:hover {
+  text-decoration: underline;
+}
+body .slide .line {
+  margin: 1vmax 5vmax 4vmax 5vmax;
+  display: flex;
+  flex-direction: row;
+}
+body .slide .line .arrow1,
+body .slide .line .arrow2 {
+  padding: 2vmax;
+  margin: auto 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+body .slide .line .arrow1 div,
+body .slide .line .arrow2 div {
+  width: 1vmax;
+  height: 3vmax;
+  background-color: #FFB801;
+  border-radius: 10px;
+  transition: all 0.5s;
+  margin: 0;
+}
+body .slide .line .arrow1 .l1,
+body .slide .line .arrow2 .l1,
+body .slide .line .arrow1 .l4,
+body .slide .line .arrow2 .l4 {
+  transform: rotate(45deg);
+}
+body .slide .line .arrow1 .l1,
+body .slide .line .arrow2 .l1,
+body .slide .line .arrow1 .l3,
+body .slide .line .arrow2 .l3 {
+  margin: -1.4vmax 0;
+}
+body .slide .line .arrow1 .l2,
+body .slide .line .arrow2 .l2,
+body .slide .line .arrow1 .l3,
+body .slide .line .arrow2 .l3 {
+  transform: rotate(-45deg);
+}
+body .slide .line .arrow1:hover,
+body .slide .line .arrow2:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto 1vmax;
+}
+body .slide .line .arrow1:hover div,
+body .slide .line .arrow2:hover div {
+  width: 1.1vmax;
+  height: 3.1vmax;
+}
+body .slide .line .block1,
+body .slide .line .block2,
+body .slide .line .block3 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: fit-content;
+  width: 25vmax;
+  background-color: #FFB801;
+  margin: 1vmax;
+  border-radius: 50px;
+  padding: 3vmax;
+}
+body .slide .line .block1 div,
+body .slide .line .block2 div,
+body .slide .line .block3 div {
+  margin: 0.4vmax 0;
+}
+body .slide .line .block1 .money,
+body .slide .line .block2 .money,
+body .slide .line .block3 .money {
+  font-size: 22px;
+  text-align: center;
+}
+body .slide .line .block1 .money span,
+body .slide .line .block2 .money span,
+body .slide .line .block3 .money span {
+  font-size: 16px;
+  text-decoration: line-through;
+}
+body .slide .line .block1 img,
+body .slide .line .block2 img,
+body .slide .line .block3 img {
+  margin: 0 auto 0.4vmax auto;
+  transition: all 0.5s;
+}
+body .slide .line .block1 .markers,
+body .slide .line .block2 .markers,
+body .slide .line .block3 .markers {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .slide .line .block1 .bike,
+body .slide .line .block2 .bike,
+body .slide .line .block3 .bike {
+  height: 15vmax;
+  width: 15vmax;
+}
+body .slide .line .block1 .bike:hover,
+body .slide .line .block2 .bike:hover,
+body .slide .line .block3 .bike:hover {
+  transition: all 0.5s;
+  height: 14.5vmax;
+  width: 14.5vmax;
+}
+body .slide .line .block1 .news,
+body .slide .line .block2 .news,
+body .slide .line .block3 .news {
+  height: 11vmax;
+  width: 16vmax;
+  border-radius: 50px;
+}
+body .slide .line .block1 .news:hover,
+body .slide .line .block2 .news:hover,
+body .slide .line .block3 .news:hover {
+  transition: all 0.5s;
+  height: 10.5vmax;
+  width: 15.5vmax;
+}
+body .slide .line .block1 .name,
+body .slide .line .block2 .name,
+body .slide .line .block3 .name {
+  margin: 0.4vmax 0;
+  font-size: 22px;
+  text-decoration: none;
+  color: #00080e;
+}
+body .slide .line .block1 .name:hover,
+body .slide .line .block2 .name:hover,
+body .slide .line .block3 .name:hover {
+  text-decoration: underline;
+}
+body .slide .line .block1 .button,
+body .slide .line .block2 .button,
+body .slide .line .block3 .button {
+  background-color: #0079D1;
+  color: white;
+}
+body .slide .line .block1 .button:hover,
+body .slide .line .block2 .button:hover,
+body .slide .line .block3 .button:hover {
+  color: #00080E;
+}
+@media (max-width: 620px) {
+  body .slide .line .block3 {
+    display: none;
+  }
+  body .slide .line .block1 {
+    width: 25vmax;
+  }
+}
+@media (max-width: 840px) {
+  body .slide .line .block2 {
+    display: none;
+  }
+  body .slide .line .block1,
+  body .slide .line .block3 {
+    width: 30vmax;
+  }
+}
+body .aboutUs {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .aboutUs .blockBlue {
+  margin: 5vmax -50px -8vmax -50px;
+  display: flex;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  background-color: #0079D1;
+  transform: rotate(6deg);
+  z-index: 2;
+}
+body .aboutUs .blockBlue .text {
+  flex-direction: column;
+  color: white;
+  padding: 0 9.5vmax;
+  margin: 10vmax 70px;
+  display: flex;
+  position: relative;
+  z-index: 3;
+  transform: rotate(-6deg);
+}
+body .aboutUs .blockBlue .text ::selection {
+  background: #FFB801;
+  color: #00080e;
+}
+@media (max-width: 460px) {
+  body .aboutUs .blockBlue .text {
+    margin: 10vmax 15px;
+  }
+}
+body .aboutUs .blockOrange {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 12vmax 15% 50px 15%;
+  background-color: #FFB801;
+  height: fit-content;
+  text-align: center;
+  width: 100%;
+}
+body .aboutUs .blockOrange .line {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+body .aboutUs .blockOrange .line .adv {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px 20px 20px;
+}
+body .aboutUs .blockOrange .line .adv img {
+  margin: 15px;
+  width: 10vmax;
+  height: 8vmax;
+}
+body .aboutUs .blockOrange .line .adv div {
+  width: 20vmax;
+}
+/*# sourceMappingURL=lending.css.map */
