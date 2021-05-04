@@ -3,39 +3,49 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
+
 
 class Good
 {
     protected $id;
     protected $type = 'Електротранспорт';
+    protected $name;
     protected $info;
     protected $price;
-    protected $img = 'img/4.png';
+    protected $img;
 
     function __construct($id)
     {
-        $this->price = 50000 + $id*50;
+        $good = DB::table('good')->find($id);
         $this->id = $id;
-        if ($id >= 1 && $id <= 19) {
-            $this->type = 'Електроскутер';
-            $this->info = "Важить $this->type від 110 до 140 кг в залежності від ємності й типу акумуляторних батарей. В базовій
-                комплектації на електромотоцикл монтується свинцево-кислотна батарея типу AGM на 72В 20А. Вона
-                складається з 6 тягових акумуляторів 6DZM20 (12v 20Ah).";
-            $this->img = 'img/1.png';
-        } elseif ($id >= 20 && $id <= 29) {
-            $this->type = 'Електротрицикл';
-            $this->info = "Кількість циклів заряду-розряду свинцево-кислотних акумуляторів
-                500. Корпус акумуляторів повністю водонепроникний виконаний з литого пластику.";
-            $this->img = 'img/2.png';
-        } elseif ($id >= 30 && $id <= 49) {
-            $this->type = 'Електромотоцикл';
-            $this->info = "Всередині міститься вся
-                електронна система управління зарядки. Спортбайк заряджається за допомогою зарядного пристрою від
-                звичайної побутової розетки.";
-            $this->img = 'img/3.png';
-        }
+        $this->price = $good->price;
+        $this->type = $good->type;
+        $this->info = $good->info;
+        $this->img = "img/$id.png";
+
+        if ('Електротранспорт' == $this->type) $this->name = 'Електротранспорт ЕT';
+        elseif ('Електроскутер' == $this->type) $this->name = 'Електроскутер ЕS';
+        elseif ('Електромотоцикл' == $this->type) $this->name = 'Електромотоцикл ЕM';
+        elseif ('Електротрицикл' == $this->type) $this->name = 'Електротрицикл ЕТR';
+
     }
 
+    public static function find($id)
+    {
+        return new Good($id);
+    }
+
+    public static function all()
+    {
+        return DB::table('good')->get();
+    }
+
+    public function getName()
+    {
+        return $this->name;
+    }
 
     public function getImg()
     {

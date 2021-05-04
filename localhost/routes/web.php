@@ -1,6 +1,9 @@
 <?php
 
+use App\Models\Good;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,13 +18,9 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    $goods = Good::all() ;
+    return view('welcome', compact('goods'));
 });
-
-Route::get('/home', function () {
-    return view('home');
-});
-
 
 Route::get('/good={id}',[App\Http\Controllers\MyController::class, 'good']);
 

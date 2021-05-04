@@ -1,5 +1,5 @@
-@import "Header/header.css";
-@import "Footer/footer.css";
+@import "header.css";
+@import "footer.css";
 body .title {
   display: flex;
   font-size: 28px;

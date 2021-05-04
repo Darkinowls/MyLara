@@ -1,7 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a4701f2d-d1b6-4fc6-a500-3b50a70cc25c" name="Default Changelist" comment="" />
+    <list default="true" id="a4701f2d-d1b6-4fc6-a500-3b50a70cc25c" name="Default Changelist" comment="I did smth">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175016_create_user_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/localhost.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/localhost.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Good.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Good.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175015_create_comment_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_175015_create_good_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/footer.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/header.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/lending.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/lending.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/lending.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/lending.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/lending.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/lending.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/catalog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/catalog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/good.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/good.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/myapp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/myapp.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +55,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +170,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1rOZDh7K4oTk5eRaBku6ZhYfrST" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -130,7 +179,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/css" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -138,9 +188,11 @@
       <recent name="E:\Web\OpenServer\domains\localhost\public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Web\OpenServer\domains\localhost\database\migrations" />
+      <recent name="E:\Web\OpenServer\domains\localhost\public\img" />
+      <recent name="E:\Web\OpenServer\domains\localhost\resources\imgs" />
+      <recent name="E:\Web\OpenServer\domains\localhost\public\img\header" />
       <recent name="E:\Web\OpenServer\domains\localhost\resources\css" />
-      <recent name="E:\Web\OpenServer\domains\localhost\resources\views\layouts" />
-      <recent name="E:\Web\OpenServer\domains\localhost\resources\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -165,21 +217,53 @@
       <workItem from="1618927655270" duration="16555000" />
       <workItem from="1618986987863" duration="35007000" />
       <workItem from="1619036988491" duration="798000" />
+      <workItem from="1619869788565" duration="154000" />
+      <workItem from="1619869978463" duration="55000" />
+      <workItem from="1619870166714" duration="681000" />
+      <workItem from="1619872368478" duration="5284000" />
+      <workItem from="1619886059728" duration="4106000" />
+      <workItem from="1619951707009" duration="45000" />
+      <workItem from="1620067522455" duration="5538000" />
+      <workItem from="1620119752696" duration="4814000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I did smth" />
+    <option name="LAST_COMMIT_MESSAGE" value="I did smth" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1618998886638">
+    <state x="515" y="108" key="#Images" timestamp="1619878039938">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1618998886638" />
-    <state x="606" y="157" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1618933976427">
+    <state x="515" y="108" key="#Images/0.0.1536.824@0.0.1536.824" timestamp="1619878039938" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619890354811">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="606" y="157" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1618933976427" />
+    <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1619890354811" />
+    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1620072933192">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620072933192" />
+    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619891437896">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1619891437896" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619011532714">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -200,6 +284,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1618940939269" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619890676884">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1619890676884" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1618862374702">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

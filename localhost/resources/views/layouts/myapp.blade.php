@@ -1,8 +1,8 @@
 <html>
 @yield('head')
 <header>
-    <a href="../../" class="Logo">
-        <img src="../../Imgs/Header/Logo.png" alt="El'Strauss" width="60px" height="60px"/>
+    <a href="/public" class="Logo">
+        <img src="img/header/Logo.png" alt="El'Strauss" width="60px" height="60px"/>
         <div>
             <span id="Name">El'Strauss</span>
             <span id="Op">магазин електротранспорту</span>
@@ -56,17 +56,17 @@
 
         <div class="Icons">
             <a href="#" class="Basket">
-                <img src="../../Imgs/Header/Basket.png" alt="Basket" width="50px" height="35px"/>
+                <img src="img/header/Basket.png" alt="Basket" width="50px" height="35px"/>
             </a>
 
             <a href="#" class="Acc">
-                <img src="../../Imgs/Header/Acc.png" alt="Account" width="35px" height="35px"/>
+                <img src="img/header/Acc.png" alt="Account" width="35px" height="35px"/>
             </a>
             <div class="input">
                 <label for="search"></label>
                 <input type="text" id="search" placeholder="Search..." name="search">
                 <button type="submit">
-                    <img src="../../Imgs/Header/Search.png" height="25px" width="25px" alt="SearchIcon"/>
+                    <img src="img/header/Search.png" height="25px" width="25px" alt="SearchIcon"/>
                 </button>
             </div>
         </div>

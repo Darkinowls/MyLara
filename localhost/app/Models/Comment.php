@@ -7,16 +7,20 @@ namespace App\Models;
 class Comment
 {
 
+    protected $id;
     protected $text;
+    protected $email;
     protected $name;
     protected $date;
 
-    function __construct($text, $name)
+    function __construct($text, $name , $email = null)
     {
         $this->name = $name;
         $this->text = $text;
+        $this->email = $email;
         $this->date = strftime('%e %B %Y');
     }
+
 
     public function getText()
     {

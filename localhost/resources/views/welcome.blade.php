@@ -1,22 +1,24 @@
 @extends('layouts.myapp')
 
 @section('head')
-<head>
+    <head>
 
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale = 1"/>
-    <link rel="stylesheet" href="resources/css/lending.css"/>
-    <script type="text/javascript" src="Java.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="Imgs/Header/Logo.png"/>
-    <title>El'Strauss</title>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale = 1"/>
+        <link rel="stylesheet" href="/resources/css/lending.css"/>
+        {{--    <script type="text/javascript" src="Java.js"></script>--}}
+        <link rel="shortcut icon" type="image/x-icon" href="img/header/Logo.png"/>
+        <title>El'Strauss</title>
 
 
-</head>
-
+    </head>
 @endsection
 
 @section('content')
-
 <body>
+
+@foreach($goods as $good)
+{{$good->type}}<br/>
+@endforeach
 
 <div class="window">
     <div class="gradient"></div>
@@ -37,7 +39,7 @@
             </ul>
             <button class="button" type="button">Замовити</button>
         </div>
-        <img src="Imgs/Lending/Електромотоцикл EМ-22.png"/>
+        <img src="img/2.png"/>
     </div>
 
 </div>
@@ -54,14 +56,13 @@
 
         <?php
 
-//        require 'functions.php';
-//
-//        showBlock(11);
-//        showBlock(12);
-//        showBlock(24);
+        //        require 'functions.php';
+        //
+        //        showBlock(11);
+        //        showBlock(12);
+        //        showBlock(24);
 
         ?>
-
 
 
         <div class="arrow2">
@@ -124,9 +125,9 @@
 
         <?php
 
-//        showBlock(11);
-//        showBlock(12);
-//        showBlock(24);
+        //        showBlock(11);
+        //        showBlock(12);
+        //        showBlock(24);
 
         ?>
 
@@ -176,7 +177,3 @@
 </body>
 
 @endsection
-
-
-
-</html>
