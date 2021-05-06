@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a4701f2d-d1b6-4fc6-a500-3b50a70cc25c" name="Default Changelist" comment="I did smth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +207,7 @@
       <workItem from="1620203545379" duration="27703000" />
       <workItem from="1620278622653" duration="364000" />
       <workItem from="1620281981092" duration="2536000" />
-      <workItem from="1620285659958" duration="13583000" />
+      <workItem from="1620285659958" duration="14218000" />
     </task>
     <task id="LOCAL-00001" summary="I did smth">
       <created>1620125875641</created>
@@ -225,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620305281766</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="I did smth">
+      <created>1620308341491</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620308341492</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
