@@ -2,7 +2,7 @@
 @yield('head')
 <header>
     <a href="/public" class="Logo">
-        <img src="img/header/Logo.png" alt="El'Strauss" width="60px" height="60px"/>
+        <img src="//localhost/public/img/header/logo.png" alt="El'Strauss" width="60px" height="60px"/>
         <div>
             <span id="Name">El'Strauss</span>
             <span id="Op">магазин електротранспорту</span>
@@ -23,10 +23,10 @@
 
             <div class="CategoryDropped">
                 <ul>
-                    <li><a href="../../?page=transport">Електротранспорт</a></li>
-                    <li><a href="../../?page=scooter">Електроскутери</a></li>
-                    <li><a href="../../?page=moto">Електромотоцикли</a></li>
-                    <li><a href="../../?page=tricycle">Електротрицикли</a></li>
+                    <li><a href="/public/category/1">Електротранспорт</a></li>
+                    <li><a href="/public/category/2">Електроскутери</a></li>
+                    <li><a href="/public/category/3">Електромотоцикли</a></li>
+                    <li><a href="/public/category/4">Електротрицикли</a></li>
                 </ul>
             </div>
         </div>
@@ -56,17 +56,17 @@
 
         <div class="Icons">
             <a href="#" class="Basket">
-                <img src="img/header/Basket.png" alt="Basket" width="50px" height="35px"/>
+                <img src="//localhost/public/img/header/basket.png" alt="Basket" width="50px" height="35px"/>
             </a>
 
             <a href="#" class="Acc">
-                <img src="img/header/Acc.png" alt="Account" width="35px" height="35px"/>
+                <img src="//localhost/public/img/header/account.png" alt="Account" width="35px" height="35px"/>
             </a>
             <div class="input">
                 <label for="search"></label>
                 <input type="text" id="search" placeholder="Search..." name="search">
                 <button type="submit">
-                    <img src="img/header/Search.png" height="25px" width="25px" alt="SearchIcon"/>
+                    <img src="//localhost/public/img/header/search.png" height="25px" width="25px" alt="SearchIcon"/>
                 </button>
             </div>
         </div>
@@ -106,18 +106,18 @@
             <div class="Big">Категорії</div>
             <ul class="Main">
                 <li>
-                    <div><a href="../../?page=transport">Електротранспорти</a><span>22</span></div>
+                    <div><a href="/public/category/1">Електротранспорти</a><span>22</span></div>
                 </li>
             </ul>
             <ul>
                 <li>
-                    <div><a href="../../?page=scooter">Електроскутери</a><span>8</span></div>
+                    <div><a href="/public/category/2">Електроскутери</a><span>8</span></div>
                 </li>
                 <li>
-                    <div><a href="../../?page=moto">Електромотоцикли</a><span>8</span></div>
+                    <div><a href="/public/category/3">Електромотоцикли</a><span>8</span></div>
                 </li>
                 <li>
-                    <div><a href="../../?page=tricycle">Електротрицикли</a><span>6</span></div>
+                    <div><a href="/public/category/4">Електротрицикли</a><span>6</span></div>
                 </li>
             </ul>
             <ul class="Main">

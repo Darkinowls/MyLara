@@ -1,0 +1,596 @@
+@import "header.css";
+@import "footer.css";
+
+
+@myblue: #0079d1;
+@myorange: #FFB801;
+@myblack: #00080e;
+
+.button {
+    display: block;
+    margin: 0.5vmax auto 1vmax auto;
+    font-size: 20px;
+    width: 150px;
+    height: 60px;
+    border-radius: 50px;
+    color: #00080e;
+    background-color: #FFB801;
+    transition: all .5s;
+    border: 0;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:hover {
+        transition: all .5s;
+        cursor: pointer;
+        color: white;
+
+    }
+}
+
+.Search {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 100px;
+
+    .Title {
+        display: flex;
+        position: relative;
+        font-size: 28px;
+        padding: .5vmax 70px;
+        border-bottom: 4px solid @myorange;
+        margin: 6vmax 6vmax 4vmax 6vmax;
+    }
+
+    .MySearch {
+        position: relative;
+        display: inline-block;
+        flex-direction: column;
+        width: 100%;
+
+        .Buttons {
+            display: flex;
+            justify-content: flex-end;
+
+            .FilterDropper, .SorterDropper {
+                z-index: 3;
+                margin: 0 35px;
+                position: relative;
+                display: flex;
+                background-color: @myblue;
+                color: white;
+                padding: 15px 2vmax;
+                font-size: 16px;
+                border: 0;
+                border-radius: 25px;
+                cursor: pointer;
+                text-align: center;
+                transition: all .5s;
+                outline: none;
+
+                &:hover {
+                    transition: all .5s;
+                    color: @myblack;
+                }
+            }
+
+            .SorterDropper {
+                margin-right: 10vmax;
+                z-index: 1;
+                background-color: @myorange;
+                color: @myblack;
+
+
+                &:hover {
+                    transition: all .5s;
+                    color: white;
+                }
+            }
+
+            .AngleFilter {
+
+                border-radius: 25px 25px 0 0;
+            }
+
+            .AngleSorter {
+
+                border-radius: 25px 25px 0 0;
+
+            }
+
+        }
+
+        .FilterDropped, .SorterDropped {
+            z-index: 2;
+            width: 100%;
+            display: none;
+            position: relative;
+            background-color: @myblue;
+            margin: -10px 0 40px 0;
+            padding: 6vmax 6vmax;
+
+            .line {
+                display: flex;
+                margin-bottom: 4vmax;
+                flex-wrap: wrap;
+
+            }
+
+            .choose {
+                margin: 10px 0 10px 30px;
+                display: flex;
+                justify-items: center;
+
+                .arrow {
+
+                    margin: auto;
+                    position: relative;
+                    display: flex;
+                    right: 45px;
+
+
+                    .l1, .l2 {
+                        width: 5px;
+                        height: 15px;
+                        background-color: @myblack;
+                        border-radius: 5px;
+                        transition: all 1s;
+
+                    }
+
+                    .l1 {
+                        transform: rotate(-45deg);
+                    }
+
+                    .l2 {
+                        transform: rotate(45deg);
+                        margin-left: 3px;
+                    }
+
+                }
+
+                select {
+                    transition: all .5s;
+                    background-color: @myorange;
+                    border-radius: 25px;
+                    padding: 20px 55px 20px 40px;
+                    font-size: 18px;
+                    outline: none;
+                    -webkit-appearance: none;
+                }
+
+                &:hover {
+
+                    select {
+                        transition: all .5s;
+                        color: white;
+                    }
+
+                    .l1, .l2 {
+                        background-color: #ffffff;
+                    }
+
+                    .l1 {
+                        transform: rotate(45deg);
+                    }
+
+                    .l2 {
+                        transform: rotate(-45deg);
+                        margin-left: 3px;
+                    }
+                }
+
+
+            }
+
+            .write {
+                margin-left: 70px;
+                color: white;
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+
+                input {
+                    padding: 0 10px;
+                    margin: 10px;
+                    color: #00080e;
+                    border-radius: 25px;
+                    outline: none;
+                    border: 0;
+                    width: 75px;
+                    height: 30px;
+                }
+
+                ::selection {
+                    color: #00080e;
+                    background-color: #FFB801;
+                }
+            }
+
+        }
+
+        .SorterDropped {
+            z-index: 3;
+            background-color: @myorange;
+
+            .button {
+                background-color: @myblue;
+                color: white;
+
+                &:hover {
+                    color: @myblack;
+                }
+            }
+
+            .choose {
+
+                .arrow {
+
+                    .l1, .l2 {
+                        width: 5px;
+                        height: 15px;
+                        background-color: white;
+                        border-radius: 5px;
+                        transition: all 1s;
+                    }
+
+                    .l1 {
+                        transform: rotate(-45deg);
+                    }
+
+                    .l2 {
+                        transform: rotate(45deg);
+                        margin-left: 3px;
+                    }
+
+                }
+
+                select {
+                    color: white;
+                    background-color: @myblue;
+                }
+
+                &:hover {
+
+                    select {
+                        color: @myblack;
+                    }
+
+                    .l1, .l2 {
+                        background-color: @myblack;
+                    }
+
+                    .l1 {
+                        transform: rotate(45deg);
+                    }
+
+                    .l2 {
+                        transform: rotate(-45deg);
+                        margin-left: 3px;
+                    }
+                }
+
+
+            }
+
+            ::selection {
+                color: @myblack;
+                background-color: @myorange;
+            }
+        }
+
+        .showFilter, .showSorter {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+        }
+
+    }
+
+    @media (max-width: 930px) {
+        .Title {
+            margin: 6vmax 4vmax 4vmax 4vmax;
+        }
+    }
+
+    @media (max-width: 460px) {
+        .Title {
+            padding: 5px 20px;
+            margin: 6vmax auto 4vmax auto;
+        }
+
+        .MySearch {
+            .Buttons {
+                display: flex;
+                justify-content: center;
+
+                .FilterDropper, .SorterDropper {
+                    margin: 0 20px;
+                }
+            }
+
+            .FilterDropped, .SorterDropped {
+                padding: 6vmax 0;
+
+                .line {
+                    .choose {
+
+                        margin: 10px 0 10px 10px;
+                        select{
+                            padding: 20px 40px 20px 20px;
+                            font-size: 16px;
+                        }
+                        .arrow{
+                            right: 30px;
+                        }
+                    }
+                    .write{
+                        margin-left: 30px;
+                    }
+
+                }
+
+            }
+
+
+        }
+    }
+}
+
+.Pages {
+    margin: 25px 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    .num {
+        margin: 0 1vmax;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+        color: white;
+        background-color: @myblue;
+        width: 4vmax;
+        height: 4vmax;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &:hover {
+            transition: all .5s;
+            color: #00080e;
+
+        }
+
+    }
+
+    .arrow1, .arrow2 {
+
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.5vmax;
+        margin: 0 1vmax;
+        transition: all .5s;
+        cursor: pointer;
+
+
+        .l1, .l2 {
+            width: .5vmax;
+            height: 2vmax;
+            background-color: @myblue;
+            border-radius: 5px;
+
+        }
+
+        .l1 {
+            transform: rotate(-45deg);
+            margin-bottom: -.9vmax;
+        }
+
+        .l2 {
+            transform: rotate(45deg);
+        }
+
+        &:hover {
+            transition: all .5s;
+            margin: 0 2vmax;
+        }
+
+    }
+
+    .arrow1 {
+        .l1 {
+            transform: rotate(45deg);
+        }
+
+        .l2 {
+            transform: rotate(-45deg);
+        }
+    }
+}
+
+.slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+
+    .title {
+        font-size: 28px;
+        padding: 5px 40px;
+        border: @myorange solid 0;
+        border-bottom-width: 3px;
+        margin: .8vmax 0;
+    }
+
+    a {
+        display: flex;
+        text-decoration: none;
+        color: #333333;
+        flex-wrap: wrap;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    .line {
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+
+        .arrow1, .arrow2 {
+            padding: 2vmax;
+            margin: auto 0;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            transition: all 1s;
+
+
+            div {
+                width: 0.7vmax;
+                height: 2.4vmax;
+                background-color: @myorange;
+                border-radius: 5px;
+                transition: all .5s;
+                margin: 0;
+            }
+
+            .l1, .l4 {
+                transform: rotate(45deg);
+                margin: -1.2vmax 0;
+            }
+
+            .l2, .l3 {
+                transform: rotate(-45deg);
+
+            }
+
+            &:hover {
+                transition: all .5s;
+                cursor: pointer;
+                margin: auto 1vmax;
+
+                div {
+                    width: .8vmax;
+                    height: 2.5vmax;
+                }
+            }
+
+
+        }
+
+        .block1, .block2, .block3 {
+
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            height: fit-content;
+            width: 25vmax;
+            background-color: #FFB801;
+            margin: 1vmax 2vmax;
+            border-radius: 50px;
+            padding: 3vmax;
+
+            div {
+                margin: 0.4vmax 0;
+            }
+
+            .money {
+                font-size: 22px;
+                text-align: center;
+
+            }
+
+            img {
+                margin: 0 auto .4vmax auto;
+                transition: all .5s;
+            }
+
+            .markers {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .bike {
+                height: 15vmax;
+                width: 15vmax;
+
+                &:hover {
+                    transition: all .5s;
+                    height: 14.5vmax;
+                    width: 14.5vmax;
+                }
+            }
+
+            .news {
+                height: 11vmax;
+                width: 16vmax;
+                border-radius: 50px;
+
+                &:hover {
+                    transition: all .5s;
+                    height: 10.5vmax;
+                    width: 15.5vmax;
+                }
+            }
+
+            .name {
+                margin: 0.4vmax 0;
+                font-size: 22px;
+                text-decoration: none;
+                color: #00080e;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .button {
+                background-color: @myblue;
+                color: white;
+
+                &:hover {
+                    color: @myblack;
+                }
+
+                ::selection {
+                    background-color: @myorange;
+                    color: @myblack;
+                }
+
+            }
+
+
+        }
+
+        @media (max-width: 620px) {
+            .block3 {
+                display: none;
+
+            }
+        }
+
+        @media (max-width: 840px) {
+            .block2 {
+                display: none;
+            }
+
+            .block1, .block3 {
+                width: 30vmax;
+            }
+
+        }
+
+    }
+
+}

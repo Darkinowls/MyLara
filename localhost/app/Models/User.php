@@ -24,6 +24,17 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    function __construct($name, $email , $password )
+    {
+        $this->fillable = [
+            'name' => $name,
+            'email' => $email ,
+            'password' => $password,
+        ];
+    }
 
+    public function comment(){
+        return $this->hasMany('app/models/Comment');
+    }
 
 }

@@ -20,29 +20,41 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4701f2d-d1b6-4fc6-a500-3b50a70cc25c" name="Default Changelist" comment="I did smth">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175016_create_user_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/localhost.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/localhost.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Type.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/GoodFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_05_175015_create_types_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_05_184548_create_goods_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/header/person.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/category.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/category.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/css/category.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/block.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/comment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Good.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Good.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175015_create_comment_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_175015_create_good_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/footer.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/footer.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/header.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/header.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/lending.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/lending.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/lending.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/lending.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/lending.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/lending.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/catalog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/catalog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_175015_create_good_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_175015_create_good_type_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_04_175015_create_comment_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175015_create_comments_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_04_175016_create_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175016_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/header/Acc.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/account.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/header/Basket.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/basket.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/header/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/header/Search.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/catalog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/catalog.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/catalog.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/good.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/good.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/good.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/good.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/css/good.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/good.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/catalog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/good.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/good.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/component.blade.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/myapp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/myapp.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -170,29 +182,33 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1rOZDh7K4oTk5eRaBku6ZhYfrST" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/database/migrations" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/img/header" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Web\OpenServer\domains\localhost\public" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Web\OpenServer\domains\localhost\database\migrations" />
-      <recent name="E:\Web\OpenServer\domains\localhost\public\img" />
-      <recent name="E:\Web\OpenServer\domains\localhost\resources\imgs" />
       <recent name="E:\Web\OpenServer\domains\localhost\public\img\header" />
       <recent name="E:\Web\OpenServer\domains\localhost\resources\css" />
+      <recent name="E:\Web\OpenServer\domains\localhost\app\Models" />
+      <recent name="E:\Web\OpenServer\domains\localhost\database\migrations" />
+      <recent name="E:\Web\OpenServer\domains\localhost\public\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Web\OpenServer\domains\localhost\public\img\transport" />
+      <recent name="E:\Web\OpenServer\domains\localhost\public" />
     </key>
   </component>
   <component name="RunManager">
@@ -224,8 +240,20 @@
       <workItem from="1619886059728" duration="4106000" />
       <workItem from="1619951707009" duration="45000" />
       <workItem from="1620067522455" duration="5538000" />
-      <workItem from="1620119752696" duration="4814000" />
+      <workItem from="1620119752696" duration="10584000" />
+      <workItem from="1620203545379" duration="27703000" />
+      <workItem from="1620278622653" duration="364000" />
+      <workItem from="1620281981092" duration="2536000" />
+      <workItem from="1620285659958" duration="10968000" />
     </task>
+    <task id="LOCAL-00001" summary="I did smth">
+      <created>1620125875641</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620125875641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +272,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="I did smth" />
     <option name="LAST_COMMIT_MESSAGE" value="I did smth" />
   </component>
@@ -256,14 +285,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1619890354811" />
-    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1620072933192">
+    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1620241703149">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620072933192" />
-    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1619891437896">
+    <state x="827" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620241703149" />
+    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1620293986599">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1619891437896" />
+    <state x="436" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1620293986599" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619011532714">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -272,18 +301,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="438" y="191" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1618988702629" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1618945415964">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620291442677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1618945415964" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620291442677" />
     <state x="513" y="135" key="NewPhpClassDialog" timestamp="1618998732290">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="513" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1618998732290" />
-    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1618940939269">
+    <state x="604" y="336" key="NewPhpFileDialog" timestamp="1620292223705">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1618940939269" />
+    <state x="604" y="336" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620292223705" />
     <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1619890676884">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -292,5 +321,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1618862374702" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1620217013438">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1620217013438" />
   </component>
 </project>

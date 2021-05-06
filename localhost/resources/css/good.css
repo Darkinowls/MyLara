@@ -1,7 +1,32 @@
 @import "footer.css";
 @import "header.css";
-body {
-  margin: 0;
+.button {
+  display: block;
+  margin: 0 auto 0.5vmax auto;
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  color: #00080e;
+  background-color: #FFB801;
+  transition: all 0.5s;
+  border: 0;
+}
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+}
+.title {
+  display: flex;
+  font-size: 28px;
+  padding: 5px 10%;
+  border: #FFB801 solid 0;
+  border-bottom-width: 3px;
+  margin: 1vmax auto;
 }
 .Title {
   display: inline-block;
@@ -9,7 +34,277 @@ body {
   font-size: 28px;
   padding: 0.5vmax 70px;
   border-bottom: 4px solid #FFB801;
-  margin: 1vmax 6vmax 5vmax 6vmax;
+  margin: 6vmax 6vmax 0 6vmax;
+}
+.window {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.window .Imgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 50px 100px;
+}
+.window .Imgs .main {
+  display: flex;
+}
+.window .Imgs .main img {
+  width: 35vmax;
+  height: 32vmax;
+}
+.window .Imgs .less {
+  display: flex;
+}
+.window .Imgs .less img {
+  transition: all 0.5s;
+  width: 8.5vmax;
+  height: 7.5vmax;
+  margin: 0.5vmax;
+}
+.window .Imgs .less img:hover {
+  transition: all 0.5s;
+  width: 15vmax;
+  height: 14vmax;
+}
+.window .Desc {
+  margin: 0 1vmax;
+  padding: 3vmax 4vmax;
+  border-radius: 50px;
+  background-color: #0079D1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+.window .Desc .head {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.window .Desc ::selection {
+  background-color: #FFB801;
+  color: #00080E;
+}
+.window .Desc .text p {
+  margin: 8px 0;
+}
+.MySearch {
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  width: 100%;
+}
+.MySearch .Buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.MySearch .Buttons .FilterDropper,
+.MySearch .Buttons .SorterDropper {
+  z-index: 3;
+  margin: 0 35px;
+  position: relative;
+  display: flex;
+  background-color: #0079D1;
+  color: white;
+  padding: 15px 2vmax;
+  font-size: 16px;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+  outline: none;
+}
+.MySearch .Buttons .FilterDropper:hover,
+.MySearch .Buttons .SorterDropper:hover {
+  transition: all 0.5s;
+  color: #00080E;
+}
+.MySearch .Buttons .SorterDropper {
+  margin-right: 10vmax;
+  z-index: 1;
+  background-color: #FFB801;
+  color: #00080E;
+}
+.MySearch .Buttons .SorterDropper:hover {
+  transition: all 0.5s;
+  color: white;
+}
+.MySearch .Buttons .AngleFilter {
+  border-radius: 25px 25px 0 0;
+}
+.MySearch .Buttons .AngleSorter {
+  border-radius: 25px 25px 0 0;
+}
+.MySearch .FilterDropped,
+.MySearch .SorterDropped {
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 2;
+  width: 100%;
+  display: none;
+  position: relative;
+  background-color: #0079D1;
+  margin: -10px 0 0 0;
+  padding: 4vmax 5vmax;
+}
+.MySearch .FilterDropped table,
+.MySearch .SorterDropped table {
+  color: white;
+  border-collapse: collapse;
+  margin: 25px 70px;
+}
+.MySearch .FilterDropped table ::selection,
+.MySearch .SorterDropped table ::selection {
+  color: #00080E;
+  background-color: #FFB801;
+}
+.MySearch .FilterDropped table td,
+.MySearch .SorterDropped table td,
+.MySearch .FilterDropped table th,
+.MySearch .SorterDropped table th {
+  border: 4px solid white;
+  padding: 1vmax;
+}
+.MySearch .FilterDropped table tr:first-child th,
+.MySearch .SorterDropped table tr:first-child th {
+  border-top: 0;
+}
+.MySearch .FilterDropped table tr td:first-child,
+.MySearch .SorterDropped table tr td:first-child,
+.MySearch .FilterDropped table tr th:first-child,
+.MySearch .SorterDropped table tr th:first-child {
+  border-left: 0;
+}
+.MySearch .FilterDropped table tr:last-child td,
+.MySearch .SorterDropped table tr:last-child td,
+.MySearch .FilterDropped table th,
+.MySearch .SorterDropped table th {
+  border-bottom: 0;
+}
+.MySearch .FilterDropped table tr td:last-child,
+.MySearch .SorterDropped table tr td:last-child,
+.MySearch .FilterDropped table tr th:last-child,
+.MySearch .SorterDropped table tr th:last-child {
+  border-right: 0;
+}
+.MySearch .FilterDropped table tr:nth-child(7),
+.MySearch .SorterDropped table tr:nth-child(7) {
+  border-top: solid 5px #FFB801;
+}
+.MySearch .FilterDropped table tr:nth-child(7) td:nth-child(2),
+.MySearch .SorterDropped table tr:nth-child(7) td:nth-child(2) {
+  border-left: solid 5px #FFB801;
+  border-right: solid 5px #FFB801;
+}
+.MySearch .SorterDropped {
+  display: none;
+  z-index: 3;
+  background-color: #FFB801;
+}
+.MySearch .SorterDropped .button {
+  margin: 0 auto;
+  width: 200px;
+  height: 60px;
+  background-color: #0079D1;
+  color: white;
+}
+.MySearch .SorterDropped .button:hover {
+  color: #00080E;
+}
+.MySearch .SorterDropped .choose {
+  color: #00080E;
+  display: flex;
+}
+.MySearch .SorterDropped .choose .arrow {
+  margin: auto 0;
+  position: relative;
+  display: flex;
+  right: 35px;
+}
+.MySearch .SorterDropped .choose .arrow .l1,
+.MySearch .SorterDropped .choose .arrow .l2 {
+  width: 5px;
+  height: 15px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.MySearch .SorterDropped .choose .arrow .l1 {
+  transform: rotate(-45deg);
+}
+.MySearch .SorterDropped .choose .arrow .l2 {
+  transform: rotate(45deg);
+  margin-left: 3px;
+}
+.MySearch .SorterDropped .choose select {
+  color: white;
+  transition: all 0.5s;
+  background-color: #0079D1;
+  border-radius: 25px;
+  padding: 20px 55px 20px 40px;
+  font-size: 18px;
+  outline: none;
+  -webkit-appearance: none;
+}
+.MySearch .SorterDropped .choose:hover select {
+  transition: all 0.5s;
+  color: #00080E;
+}
+.MySearch .SorterDropped .choose:hover .l1,
+.MySearch .SorterDropped .choose:hover .l2 {
+  background-color: #00080E;
+}
+.MySearch .SorterDropped .choose:hover .l1 {
+  transform: rotate(45deg);
+}
+.MySearch .SorterDropped .choose:hover .l2 {
+  transform: rotate(-45deg);
+  margin-left: 3px;
+}
+.MySearch .SorterDropped table {
+  color: #00080E;
+  margin: 25px 70px;
+}
+.MySearch .SorterDropped table ::selection {
+  color: white;
+  background-color: #0079D1;
+}
+.MySearch .SorterDropped table td,
+.MySearch .SorterDropped table th {
+  border: 4px solid #00080E;
+  padding: 1vmax;
+}
+.MySearch .SorterDropped table tr:first-child th {
+  border-top: 0;
+}
+.MySearch .SorterDropped table tr td:first-child,
+.MySearch .SorterDropped table tr th:first-child {
+  border-left: 0;
+}
+.MySearch .SorterDropped table tr:last-child td,
+.MySearch .SorterDropped table th {
+  border-bottom: 0;
+}
+.MySearch .SorterDropped table tr td:last-child,
+.MySearch .SorterDropped table tr th:last-child {
+  border-right: 0;
+}
+.MySearch .SorterDropped table tr:nth-child(7) {
+  border-top: solid 5px #0079D1;
+}
+.MySearch .SorterDropped table tr:nth-child(7) td:nth-child(2) {
+  border-left: solid 5px #FFB801;
+  border-right: solid 5px #FFB801;
+}
+.MySearch .showFilter,
+.MySearch .showSorter {
+  display: flex;
 }
 .about {
   margin-top: 75px;
@@ -20,7 +315,7 @@ body {
   align-items: center;
 }
 .about .blockBlue {
-  margin: 3vmax -50px 3vmax -50px;
+  margin: 3vmax -50px 8vmax -50px;
   display: flex;
   position: relative;
   width: fit-content;
@@ -43,65 +338,155 @@ body {
   background: #FFB801;
   color: #00080e;
 }
-.pop {
-  margin: auto;
+@media (max-width: 460px) {
+  .about .blockBlue .text {
+    margin: 10vmax 15px;
+  }
+}
+.Comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Comments .bLine {
+  display: flex;
+  justify-content: space-between;
+  width: 90vmin;
+}
+.Comments .bLine .button {
+  font-size: 16px;
+  margin: 20px 0;
+}
+.Comments .pop {
+  display: block;
   z-index: 5;
   border-radius: 50px;
-  border: #0079d1 dashed 5px;
+  border: #0079D1 dashed 5px;
   width: fit-content;
 }
-.pop form {
+.Comments .pop form {
   margin: 20px 10vmin 50px 10vmin;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-.pop form div {
+.Comments .pop form div {
   font-size: 24px;
   font-weight: bold;
 }
-.pop form input {
+.Comments .pop form input {
   width: 100%;
 }
-.pop form textarea {
+.Comments .pop form textarea {
   resize: none;
 }
-.pop .closer {
+.Comments .pop .closer {
   width: 50px;
   position: relative;
   cursor: pointer;
   display: flex;
   margin: 15px 15px 0 auto;
 }
-.comment {
+.Comments .comment {
   display: flex;
   padding: 2.5vmax 0 1vmax 0;
-  border-bottom: 4px solid #0079d1;
+  border-bottom: 4px solid #0079D1;
   width: 90vmin;
 }
-.comment .pers {
+.Comments .comment .pers {
   width: 100px;
   height: 100px;
 }
-.comment .content {
+.Comments .comment .content {
   margin: 1vmax 0 1vmax 3vmax;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.comment .content .name {
+.Comments .comment .content .name {
   font-size: 18px;
 }
-.comment .content .name span {
+.Comments .comment .content .name span {
   font-size: 14px;
   color: #333333;
 }
-.comment .content .text {
+.Comments .comment .content .text {
   display: inline-block;
 }
-.comment .Arr {
+.Comments .comment .Arr {
   margin: auto 2vmax;
   width: 2.5vmax;
   height: 3vmax;
+}
+@media (max-width: 930px) {
+  .Title {
+    margin: 6vmax 4vmax 4vmax 4vmax;
+  }
+}
+@media (max-width: 460px) {
+  .Title {
+    padding: 5px 20px;
+    margin: 6vmax auto 4vmax auto;
+  }
+  .MySearch .Buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .MySearch .Buttons .FilterDropper,
+  .MySearch .Buttons .SorterDropper {
+    margin: 0 10px;
+  }
+  .MySearch .FilterDropped,
+  .MySearch .SorterDropped {
+    padding: 6vmax 0;
+  }
+  .MySearch .FilterDropped .line .choose,
+  .MySearch .SorterDropped .line .choose {
+    margin: 10px 0 10px 10px;
+  }
+  .MySearch .FilterDropped .line .choose select,
+  .MySearch .SorterDropped .line .choose select {
+    padding: 20px 40px 20px 20px;
+    font-size: 16px;
+  }
+  .MySearch .FilterDropped .line .choose .arrow,
+  .MySearch .SorterDropped .line .choose .arrow {
+    right: 30px;
+  }
+  .MySearch .FilterDropped .line .write,
+  .MySearch .SorterDropped .line .write {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 770px) {
+  .MySearch .SorterDropped {
+    padding: 4vmax 0;
+  }
+  .MySearch .SorterDropped table tbody tr td .choose {
+    margin: 10px 0 10px 10px;
+  }
+  .MySearch .SorterDropped table tbody tr td .choose select {
+    padding: 20px 40px 20px 20px;
+    font-size: 14px;
+  }
+  .MySearch .SorterDropped table tbody tr td .choose .arrow {
+    right: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .MySearch .SorterDropped,
+  .MySearch .FilterDropped {
+    padding: 4vmax 0;
+  }
+  .MySearch .SorterDropped table,
+  .MySearch .FilterDropped table {
+    margin: 25px 10px;
+  }
+  .MySearch .SorterDropped table tbody tr td .choose select,
+  .MySearch .FilterDropped table tbody tr td .choose select {
+    width: 100%;
+    word-wrap: normal !important;
+    white-space: normal;
+  }
 }
 /*# sourceMappingURL=good.css.map */

@@ -4,38 +4,14 @@
 namespace App\Models;
 
 
-class Comment
+use Illuminate\Database\Eloquent\Model;
+
+class Comment extends Model
 {
 
-    protected $id;
-    protected $text;
-    protected $email;
-    protected $name;
-    protected $date;
-
-    function __construct($text, $name , $email = null)
+    public function good()
     {
-        $this->name = $name;
-        $this->text = $text;
-        $this->email = $email;
-        $this->date = strftime('%e %B %Y');
+        return $this->hasOne(Good::class);
     }
-
-
-    public function getText()
-    {
-        return $this->text;
-    }
-
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    public function getDate()
-    {
-        return $this->date;
-    }
-
 
 }

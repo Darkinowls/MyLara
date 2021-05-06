@@ -1,133 +1,601 @@
-@myblue: #0079d1;
-@myorange: #FFB801;
-@myblack: #00080e;
-
 @import "footer.css";
 @import "header.css";
 
-body{
-    margin: 0;
+@myblue: #0079D1;
+@myorange: #FFB801;
+@myblack: #00080E;
+
+.button {
+  display: block;
+  margin: 0 auto 0.5vmax auto;
+  font-size: 20px;
+  width: 200px;
+  height: 60px;
+  border-radius: 50px;
+  color: #00080e;
+  background-color: #FFB801;
+  transition: all .5s;
+  border: 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    transition: all .5s;
+    cursor: pointer;
+    color: white;
+
+  }
+}
+
+.title {
+  display: flex;
+  font-size: 28px;
+  padding: 5px 10%;
+  border: @myorange solid 0;
+  border-bottom-width: 3px;
+  margin: 1vmax auto;
+
+
 }
 
 .Title {
-    display: inline-block;
+  display: inline-block;
+  position: relative;
+  font-size: 28px;
+  padding: .5vmax 70px;
+  border-bottom: 4px solid @myorange;
+  margin: 6vmax 6vmax 0 6vmax;
+}
+
+.window {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  .Imgs {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 100px;
+
+    .main {
+      display: flex;
+
+      img {
+        width: 35vmax;
+        height: 32vmax;
+      }
+    }
+
+    .less {
+
+      display: flex;
+
+      img {
+        transition: all .5s;
+        width: 8.5vmax;
+        height: 7.5vmax;
+        margin: .5vmax;
+
+        &:hover {
+          transition: all .5s;
+          width: 15vmax;
+          height: 14vmax;
+        }
+      }
+    }
+  }
+
+  .Desc {
+    margin: 0 1vmax;
+    padding: 3vmax 4vmax;
+    border-radius: 50px;
+    background-color: @myblue;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+
+    .head {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    ::selection {
+      background-color: @myorange;
+      color: @myblack;
+    }
+
+    .text {
+      p {
+        margin: 8px 0;
+      }
+    }
+  }
+
+}
+
+.MySearch {
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  width: 100%;
+
+  .Buttons {
+    display: flex;
+    justify-content: flex-end;
+
+    .FilterDropper, .SorterDropper {
+      z-index: 3;
+      margin: 0 35px;
+      position: relative;
+      display: flex;
+      background-color: @myblue;
+      color: white;
+      padding: 15px 2vmax;
+      font-size: 16px;
+      border: 0;
+      border-radius: 25px;
+      cursor: pointer;
+      text-align: center;
+      transition: all .5s;
+      outline: none;
+
+      &:hover {
+        transition: all .5s;
+        color: @myblack;
+      }
+    }
+
+    .SorterDropper {
+      margin-right: 10vmax;
+      z-index: 1;
+      background-color: @myorange;
+      color: @myblack;
+
+
+      &:hover {
+        transition: all .5s;
+        color: white;
+      }
+    }
+
+    .AngleFilter {
+
+      border-radius: 25px 25px 0 0;
+    }
+
+    .AngleSorter {
+
+      border-radius: 25px 25px 0 0;
+
+    }
+  }
+
+
+  .FilterDropped, .SorterDropped {
+    flex-direction: column;
+    align-items: flex-start;
+    z-index: 2;
+    width: 100%;
+    display: none;
     position: relative;
-    font-size: 28px;
-    padding: .5vmax 70px;
-    border-bottom: 4px solid @myorange;
-    margin: 1vmax 6vmax 5vmax 6vmax;
+    background-color: @myblue;
+    margin: -10px 0 0 0;
+    padding: 4vmax 5vmax;
+
+    table {
+      color: white;
+      border-collapse: collapse;
+      margin: 25px 70px;
+
+      ::selection {
+        color: @myblack;
+        background-color: #FFB801;
+      }
+
+      td, th {
+        border: 4px solid white;
+        padding: 1vmax;
+      }
+
+      tr:first-child th {
+        border-top: 0;
+      }
+
+      tr td:first-child, tr th:first-child {
+        border-left: 0;
+      }
+
+      tr:last-child td, th {
+        border-bottom: 0;
+      }
+
+      tr td:last-child, tr th:last-child {
+        border-right: 0;
+      }
+
+      tr:nth-child(7) {
+        border-top: solid 5px @myorange;
+
+        td:nth-child(2) {
+          border-left: solid 5px @myorange;
+          border-right: solid 5px @myorange;
+        }
+      }
+
+    }
+
+  }
+
+  .SorterDropped {
+    display: none;
+    z-index: 3;
+    background-color: @myorange;
+
+    .button {
+      margin: 0 auto;
+      width: 200px;
+      height: 60px;
+      background-color: @myblue;
+      color: white;
+
+      &:hover {
+        color: @myblack;
+      }
+    }
+
+    .choose {
+      color: @myblack;
+      display: flex;
+
+      .arrow {
+        margin: auto 0;
+        position: relative;
+        display: flex;
+        right: 35px;
+
+        .l1, .l2 {
+          width: 5px;
+          height: 15px;
+          background-color: white;
+          border-radius: 5px;
+          transition: all 1s;
+
+        }
+
+        .l1 {
+          transform: rotate(-45deg);
+        }
+
+        .l2 {
+          transform: rotate(45deg);
+          margin-left: 3px;
+        }
+
+      }
+
+      select {
+        color: white;
+        transition: all .5s;
+        background-color: @myblue;
+        border-radius: 25px;
+        padding: 20px 55px 20px 40px;
+        font-size: 18px;
+        outline: none;
+        -webkit-appearance: none;
+      }
+
+      &:hover {
+
+        select {
+          transition: all .5s;
+          color: @myblack;
+        }
+
+        .l1, .l2 {
+          background-color: @myblack;
+        }
+
+        .l1 {
+          transform: rotate(45deg);
+        }
+
+        .l2 {
+          transform: rotate(-45deg);
+          margin-left: 3px;
+        }
+      }
+
+    }
+
+    table {
+      color: @myblack;
+      margin: 25px 70px;
+
+      ::selection {
+        color: white;
+        background-color: @myblue;
+      }
+
+      td, th {
+        border: 4px solid @myblack;
+        padding: 1vmax;
+      }
+
+      tr:first-child th {
+        border-top: 0;
+      }
+
+      tr td:first-child, tr th:first-child {
+        border-left: 0;
+      }
+
+      tr:last-child td, th {
+        border-bottom: 0;
+      }
+
+      tr td:last-child, tr th:last-child {
+        border-right: 0;
+      }
+
+      tr:nth-child(7) {
+        border-top: solid 5px @myblue;
+
+        td:nth-child(2) {
+          border-left: solid 5px @myorange;
+          border-right: solid 5px @myorange;
+        }
+      }
+
+    }
+  }
+
+  .showFilter, .showSorter {
+    display: flex;
+
+  }
+
 }
 
 .about {
 
-    margin-top: 75px;
-    overflow: hidden;
-    position: relative;
+  margin-top: 75px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .blockBlue {
+    margin: 3vmax -50px 8vmax -50px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: #0079D1;
+    transform: rotate(6deg);
+    z-index: 2;
 
-    .blockBlue {
-        margin: 3vmax -50px 3vmax -50px;
-        display: flex;
-        position: relative;
-        width: fit-content;
-        height: fit-content;
-        background-color: #0079D1;
-        transform: rotate(6deg);
-        z-index: 2;
+    .text {
+      flex-direction: column;
+      color: white;
+      padding: 0 9.5vmax;
+      margin: 10vmax 70px;
+      display: flex;
+      position: relative;
+      z-index: 3;
+      transform: rotate(-6deg);
 
-        .text {
-            flex-direction: column;
-            color: white;
-            padding: 0 9.5vmax;
-            margin: 10vmax 70px;
-            display: flex;
-            position: relative;
-            z-index: 3;
-            transform: rotate(-6deg);
-
-            ::selection {
-                background: @myorange;
-                color: #00080e;
-            }
-        }
+      ::selection {
+        background: @myorange;
+        color: #00080e;
+      }
     }
+
+    @media (max-width: 460px) {
+      .text {
+        margin: 10vmax 15px;
+      }
+    }
+  }
 }
 
-.pop {
-    margin: auto;
+.Comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .bLine {
+    display: flex;
+    justify-content: space-between;
+    width: 90vmin;
+
+    .button {
+      font-size: 16px;
+      margin: 20px 0;
+    }
+  }
+
+  .pop {
+    //display: none;
+      display: block;
     z-index: 5;
     border-radius: 50px;
     border: @myblue dashed 5px;
     width: fit-content;
 
     form {
-        margin: 20px 10vmin 50px 10vmin;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
+      margin: 20px 10vmin 50px 10vmin;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
 
-        div{
-            font-size: 24px;
-            font-weight: bold;
-        }
+      div{
+        font-size: 24px;
+        font-weight: bold;
+      }
 
-        input {
-            width: 100%;
-        }
+      input {
+        width: 100%;
+      }
 
-        textarea {
-            resize: none;
-        }
+      textarea {
+        resize: none;
+      }
 
     }
 
     .closer {
-        width: 50px;
-        position: relative;
-        cursor: pointer;
-        display: flex;
-        margin: 15px 15px 0 auto;
+      width: 50px;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      margin: 15px 15px 0 auto;
 
     }
 
-}
+  }
 
-.comment {
+  .comment {
     display: flex;
     padding: 2.5vmax 0 1vmax 0;
     border-bottom: 4px solid @myblue;
     width: 90vmin;
 
     .pers {
-        width: 100px;
-        height: 100px;
+      width: 100px;
+      height: 100px;
     }
 
     .content {
-        margin: 1vmax 0 1vmax 3vmax;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+      margin: 1vmax 0 1vmax 3vmax;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
 
-        .name {
-            font-size: 18px;
+      .name {
+        font-size: 18px;
 
-            span {
-                font-size: 14px;
-                color: #333333;
-            }
+        span {
+          font-size: 14px;
+          color: #333333;
         }
+      }
 
-        .text {
-            display: inline-block;
-        }
+      .text {
+        display: inline-block;
+      }
     }
 
     .Arr {
-        margin: auto 2vmax;
-        width: 2.5vmax;
-        height: 3vmax;
+      margin: auto 2vmax;
+      width: 2.5vmax;
+      height: 3vmax;
     }
+  }
+
 }
+
+
+@media (max-width: 930px) {
+  .Title {
+    margin: 6vmax 4vmax 4vmax 4vmax;
+  }
+}
+
+@media (max-width: 460px) {
+  .Title {
+    padding: 5px 20px;
+    margin: 6vmax auto 4vmax auto;
+  }
+
+  .MySearch {
+    .Buttons {
+      display: flex;
+      justify-content: center;
+
+      .FilterDropper, .SorterDropper {
+        margin: 0 10px;
+      }
+    }
+
+    .FilterDropped, .SorterDropped {
+      padding: 6vmax 0;
+
+      .line {
+        .choose {
+
+          margin: 10px 0 10px 10px;
+
+          select {
+            padding: 20px 40px 20px 20px;
+            font-size: 16px;
+          }
+
+          .arrow {
+            right: 30px;
+          }
+        }
+
+        .write {
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+
+  .MySearch .SorterDropped {
+
+    padding: 4vmax 0;
+
+    table tbody tr td .choose {
+
+      margin: 10px 0 10px 10px;
+
+      select {
+        padding: 20px 40px 20px 20px;
+        font-size: 14px;
+      }
+
+      .arrow {
+        right: 30px;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .MySearch {
+    .SorterDropped, .FilterDropped {
+      padding: 4vmax 0;
+
+      table {
+        margin: 25px 10px;
+
+        tbody tr td .choose select {
+          width: 100%;
+          word-wrap: normal !important;
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
+
+
+

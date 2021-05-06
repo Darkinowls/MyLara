@@ -1,0 +1,521 @@
+@import "header.css";
+@import "footer.css";
+.button {
+  display: block;
+  margin: 0.5vmax auto 1vmax auto;
+  font-size: 20px;
+  width: 150px;
+  height: 60px;
+  border-radius: 50px;
+  color: #00080e;
+  background-color: #FFB801;
+  transition: all 0.5s;
+  border: 0;
+}
+.button:focus {
+  outline: none;
+}
+.button:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  color: white;
+}
+.Search {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+.Search .Title {
+  display: flex;
+  position: relative;
+  font-size: 28px;
+  padding: 0.5vmax 70px;
+  border-bottom: 4px solid #FFB801;
+  margin: 6vmax 6vmax 4vmax 6vmax;
+}
+.Search .MySearch {
+  position: relative;
+  display: inline-block;
+  flex-direction: column;
+  width: 100%;
+}
+.Search .MySearch .Buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.Search .MySearch .Buttons .FilterDropper,
+.Search .MySearch .Buttons .SorterDropper {
+  z-index: 3;
+  margin: 0 35px;
+  position: relative;
+  display: flex;
+  background-color: #0079d1;
+  color: white;
+  padding: 15px 2vmax;
+  font-size: 16px;
+  border: 0;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.5s;
+  outline: none;
+}
+.Search .MySearch .Buttons .FilterDropper:hover,
+.Search .MySearch .Buttons .SorterDropper:hover {
+  transition: all 0.5s;
+  color: #00080e;
+}
+.Search .MySearch .Buttons .SorterDropper {
+  margin-right: 10vmax;
+  z-index: 1;
+  background-color: #FFB801;
+  color: #00080e;
+}
+.Search .MySearch .Buttons .SorterDropper:hover {
+  transition: all 0.5s;
+  color: white;
+}
+.Search .MySearch .Buttons .AngleFilter {
+  border-radius: 25px 25px 0 0;
+}
+.Search .MySearch .Buttons .AngleSorter {
+  border-radius: 25px 25px 0 0;
+}
+.Search .MySearch .FilterDropped,
+.Search .MySearch .SorterDropped {
+  z-index: 2;
+  width: 100%;
+  display: none;
+  position: relative;
+  background-color: #0079d1;
+  margin: -10px 0 40px 0;
+  padding: 6vmax 6vmax;
+}
+.Search .MySearch .FilterDropped .line,
+.Search .MySearch .SorterDropped .line {
+  display: flex;
+  margin-bottom: 4vmax;
+  flex-wrap: wrap;
+}
+.Search .MySearch .FilterDropped .choose,
+.Search .MySearch .SorterDropped .choose {
+  margin: 10px 0 10px 30px;
+  display: flex;
+  justify-items: center;
+}
+.Search .MySearch .FilterDropped .choose .arrow,
+.Search .MySearch .SorterDropped .choose .arrow {
+  margin: auto;
+  position: relative;
+  display: flex;
+  right: 45px;
+}
+.Search .MySearch .FilterDropped .choose .arrow .l1,
+.Search .MySearch .SorterDropped .choose .arrow .l1,
+.Search .MySearch .FilterDropped .choose .arrow .l2,
+.Search .MySearch .SorterDropped .choose .arrow .l2 {
+  width: 5px;
+  height: 15px;
+  background-color: #00080e;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.Search .MySearch .FilterDropped .choose .arrow .l1,
+.Search .MySearch .SorterDropped .choose .arrow .l1 {
+  transform: rotate(-45deg);
+}
+.Search .MySearch .FilterDropped .choose .arrow .l2,
+.Search .MySearch .SorterDropped .choose .arrow .l2 {
+  transform: rotate(45deg);
+  margin-left: 3px;
+}
+.Search .MySearch .FilterDropped .choose select,
+.Search .MySearch .SorterDropped .choose select {
+  transition: all 0.5s;
+  background-color: #FFB801;
+  border-radius: 25px;
+  padding: 20px 55px 20px 40px;
+  font-size: 18px;
+  outline: none;
+  -webkit-appearance: none;
+}
+.Search .MySearch .FilterDropped .choose:hover select,
+.Search .MySearch .SorterDropped .choose:hover select {
+  transition: all 0.5s;
+  color: white;
+}
+.Search .MySearch .FilterDropped .choose:hover .l1,
+.Search .MySearch .SorterDropped .choose:hover .l1,
+.Search .MySearch .FilterDropped .choose:hover .l2,
+.Search .MySearch .SorterDropped .choose:hover .l2 {
+  background-color: #ffffff;
+}
+.Search .MySearch .FilterDropped .choose:hover .l1,
+.Search .MySearch .SorterDropped .choose:hover .l1 {
+  transform: rotate(45deg);
+}
+.Search .MySearch .FilterDropped .choose:hover .l2,
+.Search .MySearch .SorterDropped .choose:hover .l2 {
+  transform: rotate(-45deg);
+  margin-left: 3px;
+}
+.Search .MySearch .FilterDropped .write,
+.Search .MySearch .SorterDropped .write {
+  margin-left: 70px;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.Search .MySearch .FilterDropped .write input,
+.Search .MySearch .SorterDropped .write input {
+  padding: 0 10px;
+  margin: 10px;
+  color: #00080e;
+  border-radius: 25px;
+  outline: none;
+  border: 0;
+  width: 75px;
+  height: 30px;
+}
+.Search .MySearch .FilterDropped .write ::selection,
+.Search .MySearch .SorterDropped .write ::selection {
+  color: #00080e;
+  background-color: #FFB801;
+}
+.Search .MySearch .SorterDropped {
+  z-index: 3;
+  background-color: #FFB801;
+}
+.Search .MySearch .SorterDropped .button {
+  background-color: #0079d1;
+  color: white;
+}
+.Search .MySearch .SorterDropped .button:hover {
+  color: #00080e;
+}
+.Search .MySearch .SorterDropped .choose .arrow .l1,
+.Search .MySearch .SorterDropped .choose .arrow .l2 {
+  width: 5px;
+  height: 15px;
+  background-color: white;
+  border-radius: 5px;
+  transition: all 1s;
+}
+.Search .MySearch .SorterDropped .choose .arrow .l1 {
+  transform: rotate(-45deg);
+}
+.Search .MySearch .SorterDropped .choose .arrow .l2 {
+  transform: rotate(45deg);
+  margin-left: 3px;
+}
+.Search .MySearch .SorterDropped .choose select {
+  color: white;
+  background-color: #0079d1;
+}
+.Search .MySearch .SorterDropped .choose:hover select {
+  color: #00080e;
+}
+.Search .MySearch .SorterDropped .choose:hover .l1,
+.Search .MySearch .SorterDropped .choose:hover .l2 {
+  background-color: #00080e;
+}
+.Search .MySearch .SorterDropped .choose:hover .l1 {
+  transform: rotate(45deg);
+}
+.Search .MySearch .SorterDropped .choose:hover .l2 {
+  transform: rotate(-45deg);
+  margin-left: 3px;
+}
+.Search .MySearch .SorterDropped ::selection {
+  color: #00080e;
+  background-color: #FFB801;
+}
+.Search .MySearch .showFilter,
+.Search .MySearch .showSorter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+@media (max-width: 930px) {
+  .Search .Title {
+    margin: 6vmax 4vmax 4vmax 4vmax;
+  }
+}
+@media (max-width: 460px) {
+  .Search .Title {
+    padding: 5px 20px;
+    margin: 6vmax auto 4vmax auto;
+  }
+  .Search .MySearch .Buttons {
+    display: flex;
+    justify-content: center;
+  }
+  .Search .MySearch .Buttons .FilterDropper,
+  .Search .MySearch .Buttons .SorterDropper {
+    margin: 0 20px;
+  }
+  .Search .MySearch .FilterDropped,
+  .Search .MySearch .SorterDropped {
+    padding: 6vmax 0;
+  }
+  .Search .MySearch .FilterDropped .line .choose,
+  .Search .MySearch .SorterDropped .line .choose {
+    margin: 10px 0 10px 10px;
+  }
+  .Search .MySearch .FilterDropped .line .choose select,
+  .Search .MySearch .SorterDropped .line .choose select {
+    padding: 20px 40px 20px 20px;
+    font-size: 16px;
+  }
+  .Search .MySearch .FilterDropped .line .choose .arrow,
+  .Search .MySearch .SorterDropped .line .choose .arrow {
+    right: 30px;
+  }
+  .Search .MySearch .FilterDropped .line .write,
+  .Search .MySearch .SorterDropped .line .write {
+    margin-left: 30px;
+  }
+}
+.Pages {
+  margin: 25px 0;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.Pages .num {
+  margin: 0 1vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+  color: white;
+  background-color: #0079d1;
+  width: 4vmax;
+  height: 4vmax;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.Pages .num:hover {
+  transition: all 0.5s;
+  color: #00080e;
+}
+.Pages .arrow1,
+.Pages .arrow2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5vmax;
+  margin: 0 1vmax;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.Pages .arrow1 .l1,
+.Pages .arrow2 .l1,
+.Pages .arrow1 .l2,
+.Pages .arrow2 .l2 {
+  width: 0.5vmax;
+  height: 2vmax;
+  background-color: #0079d1;
+  border-radius: 5px;
+}
+.Pages .arrow1 .l1,
+.Pages .arrow2 .l1 {
+  transform: rotate(-45deg);
+  margin-bottom: -0.9vmax;
+}
+.Pages .arrow1 .l2,
+.Pages .arrow2 .l2 {
+  transform: rotate(45deg);
+}
+.Pages .arrow1:hover,
+.Pages .arrow2:hover {
+  transition: all 0.5s;
+  margin: 0 2vmax;
+}
+.Pages .arrow1 .l1 {
+  transform: rotate(45deg);
+}
+.Pages .arrow1 .l2 {
+  transform: rotate(-45deg);
+}
+.slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+}
+.slide .title {
+  font-size: 28px;
+  padding: 5px 40px;
+  border: #FFB801 solid 0;
+  border-bottom-width: 3px;
+  margin: 0.8vmax 0;
+}
+.slide a {
+  display: flex;
+  text-decoration: none;
+  color: #333333;
+  flex-wrap: wrap;
+}
+.slide a:hover {
+  text-decoration: underline;
+}
+.slide .line {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+}
+.slide .line .arrow1,
+.slide .line .arrow2 {
+  padding: 2vmax;
+  margin: auto 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 1s;
+}
+.slide .line .arrow1 div,
+.slide .line .arrow2 div {
+  width: 0.7vmax;
+  height: 2.4vmax;
+  background-color: #FFB801;
+  border-radius: 5px;
+  transition: all 0.5s;
+  margin: 0;
+}
+.slide .line .arrow1 .l1,
+.slide .line .arrow2 .l1,
+.slide .line .arrow1 .l4,
+.slide .line .arrow2 .l4 {
+  transform: rotate(45deg);
+  margin: -1.2vmax 0;
+}
+.slide .line .arrow1 .l2,
+.slide .line .arrow2 .l2,
+.slide .line .arrow1 .l3,
+.slide .line .arrow2 .l3 {
+  transform: rotate(-45deg);
+}
+.slide .line .arrow1:hover,
+.slide .line .arrow2:hover {
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto 1vmax;
+}
+.slide .line .arrow1:hover div,
+.slide .line .arrow2:hover div {
+  width: 0.8vmax;
+  height: 2.5vmax;
+}
+.slide .line .block1,
+.slide .line .block2,
+.slide .line .block3 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: fit-content;
+  width: 25vmax;
+  background-color: #FFB801;
+  margin: 1vmax 2vmax;
+  border-radius: 50px;
+  padding: 3vmax;
+}
+.slide .line .block1 div,
+.slide .line .block2 div,
+.slide .line .block3 div {
+  margin: 0.4vmax 0;
+}
+.slide .line .block1 .money,
+.slide .line .block2 .money,
+.slide .line .block3 .money {
+  font-size: 22px;
+  text-align: center;
+}
+.slide .line .block1 img,
+.slide .line .block2 img,
+.slide .line .block3 img {
+  margin: 0 auto 0.4vmax auto;
+  transition: all 0.5s;
+}
+.slide .line .block1 .markers,
+.slide .line .block2 .markers,
+.slide .line .block3 .markers {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slide .line .block1 .bike,
+.slide .line .block2 .bike,
+.slide .line .block3 .bike {
+  height: 15vmax;
+  width: 15vmax;
+}
+.slide .line .block1 .bike:hover,
+.slide .line .block2 .bike:hover,
+.slide .line .block3 .bike:hover {
+  transition: all 0.5s;
+  height: 14.5vmax;
+  width: 14.5vmax;
+}
+.slide .line .block1 .news,
+.slide .line .block2 .news,
+.slide .line .block3 .news {
+  height: 11vmax;
+  width: 16vmax;
+  border-radius: 50px;
+}
+.slide .line .block1 .news:hover,
+.slide .line .block2 .news:hover,
+.slide .line .block3 .news:hover {
+  transition: all 0.5s;
+  height: 10.5vmax;
+  width: 15.5vmax;
+}
+.slide .line .block1 .name,
+.slide .line .block2 .name,
+.slide .line .block3 .name {
+  margin: 0.4vmax 0;
+  font-size: 22px;
+  text-decoration: none;
+  color: #00080e;
+}
+.slide .line .block1 .name:hover,
+.slide .line .block2 .name:hover,
+.slide .line .block3 .name:hover {
+  text-decoration: underline;
+}
+.slide .line .block1 .button,
+.slide .line .block2 .button,
+.slide .line .block3 .button {
+  background-color: #0079d1;
+  color: white;
+}
+.slide .line .block1 .button:hover,
+.slide .line .block2 .button:hover,
+.slide .line .block3 .button:hover {
+  color: #00080e;
+}
+.slide .line .block1 .button ::selection,
+.slide .line .block2 .button ::selection,
+.slide .line .block3 .button ::selection {
+  background-color: #FFB801;
+  color: #00080e;
+}
+@media (max-width: 620px) {
+  .slide .line .block3 {
+    display: none;
+  }
+}
+@media (max-width: 840px) {
+  .slide .line .block2 {
+    display: none;
+  }
+  .slide .line .block1,
+  .slide .line .block3 {
+    width: 30vmax;
+  }
+}
+/*# sourceMappingURL=category.css.map */

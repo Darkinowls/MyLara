@@ -5,34 +5,40 @@ namespace App\Http\Controllers;
 
 use App\Models\Comment;
 use App\Models\Good;
+use App\Models\Type;
 use Illuminate\Http\Request;
 
 class MyController extends Controller
 {
     public function good($id)
     {
-        $obj = new Good($id);
-        return view('good', ['obj' => $obj]);
+        return view('good', ['obj' => Good::all()->find($id)]);
     }
 
-    public function catalog($id)
+    public function category($type_id)
     {
-        $obj1 = new Good($id);
-        $obj2 = new Good($id + 20);
-        $obj3 = new Good($id + 40);
-        return view('catalog', ['objs' => ['obj1' => $obj1, 'obj2' => $obj2, 'obj3' => $obj3]]);
+        $types = Type::all()->find($type_id);
+        $objs = $types->goods;
+        return view('category', ['objs' => $objs ]);
     }
 
 
     public function post(Request $request)
     {
+            $com = new Comment;
+            $arr = explode('/' , url()->previous());
+            $com->good_id = $arr[5];
+            $com->name = $request->input('name');
+            $com->email = $request->input('email');
+            $com->text = $request->input('text');
+            $com->save();
 
-        if ($request->has('name') && $request->has('text')) {
-            $com = new Comment($request->input('text'), $request->input('name'));
-            echo 'Your name : ' . $com->getName() . '<br/>';
-            echo 'Your text : ' . $com->getText() . '<br/>';
-            echo 'Your Time : ' . $com->getDate();
-        }
+             return redirect()->back();
+    }
 
+    public function welcome(){
+
+        return view('welcome', ['objs' => [Good::all()->find(1) , Good::all()->find(3) ,
+            Good::all()->find(4) ]]  );
     }
 }
