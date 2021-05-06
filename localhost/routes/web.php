@@ -22,7 +22,7 @@ Route::get('/', [App\Http\Controllers\MyController::class, 'welcome'])->name('we
 
 Route::get('/good/{id}',[App\Http\Controllers\MyController::class, 'good'])->name('good/{id}');
 
-Route::get('/category/{name}',[App\Http\Controllers\MyController::class, 'category']);
+Route::get('/category/{id}',[App\Http\Controllers\MyController::class, 'category']);
 
 Route::post('/post', [App\Http\Controllers\MyController::class, 'post'])->name('post.comment');
 

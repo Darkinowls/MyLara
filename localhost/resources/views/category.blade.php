@@ -15,7 +15,7 @@
     <body>
 
 
-    @for($i = 0; $i < 2; $i++)
+
 
         <div class="slide">
             <div class="line">
@@ -31,7 +31,7 @@
             </div>
         </div>
 
-    @endfor
+
 
 
     </body>

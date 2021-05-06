@@ -20,43 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a4701f2d-d1b6-4fc6-a500-3b50a70cc25c" name="Default Changelist" comment="I did smth">
-      <change afterPath="$PROJECT_DIR$/app/Models/Type.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/GoodFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_05_175015_create_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2021_05_05_184548_create_goods_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/header/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/css/category.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/css/category.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/css/category.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/block.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/comment.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Good.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Good.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_01_175015_create_good_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_01_175015_create_good_type_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_04_175015_create_comment_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175015_create_comments_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_04_175016_create_user_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_04_175016_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/transport/4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/header/Acc.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/account.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/header/Basket.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/basket.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/header/Logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/header/Search.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/header/search.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/catalog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/catalog.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/catalog.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/good.css" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/good.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/good.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/good.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/css/good.less" beforeDir="false" afterPath="$PROJECT_DIR$/resources/css/good.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/catalog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/good.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/good.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/component.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/myapp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/myapp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/category.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -244,7 +209,7 @@
       <workItem from="1620203545379" duration="27703000" />
       <workItem from="1620278622653" duration="364000" />
       <workItem from="1620281981092" duration="2536000" />
-      <workItem from="1620285659958" duration="10968000" />
+      <workItem from="1620285659958" duration="13583000" />
     </task>
     <task id="LOCAL-00001" summary="I did smth">
       <created>1620125875641</created>
@@ -253,7 +218,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620125875641</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="I did smth">
+      <created>1620305281766</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620305281766</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
