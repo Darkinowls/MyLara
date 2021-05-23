@@ -10,8 +10,17 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
 
+    protected $fillable = [
+        'id', 'name', 'steam_id', 'balance' , 'created_at', 'updated_at'
+    ];
+
+    protected $hidden = [
+        'password',
+    ];
+
+
     use HasFactory;
-    
+
     public function reviews()
     {
         return $this->hasMany(Review::class);
@@ -22,19 +31,5 @@ class User extends Authenticatable
         return $this->hasMany(Order::class);
     }
 
-    public function keys()
-    {
-        return $this->hasMany(Key::class);
-    }
-
-    public function account()
-    {
-        return $this->hasMany(Account::class);
-    }
-
-    public function products()
-    {
-        return $this->hasMany(Product::class);
-    }
 
 }

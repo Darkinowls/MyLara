@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\AccountResource;
 use App\Models\Account;
 use Illuminate\Http\Request;
 
@@ -11,11 +12,11 @@ class AccountController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Account[]|\Illuminate\Database\Eloquent\Collection
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
     {
-        return Account::all();
+        return AccountResource::collection(Account::all());
     }
 
     /**
@@ -33,11 +34,11 @@ class AccountController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return Account[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model
+     * @return AccountResource
      */
     public function show($id)
     {
-        return Account::all()->find($id);
+        return new AccountResource(Account::all()->find($id));
     }
 
     /**

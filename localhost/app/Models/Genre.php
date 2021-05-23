@@ -9,6 +9,10 @@ class Genre extends Model
 {
     use HasFactory;
 
+    protected $fillable=[
+        'id','name', 'created_at', 'updated_at'
+    ];
+
     public function products(){
         return $this->belongsToMany(Product::class);
     }

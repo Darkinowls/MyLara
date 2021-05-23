@@ -18,7 +18,7 @@ class CreateAccountsTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->bigInteger('balance');
-            $table->string('steam_id');
+            $table->string('steam_id')->unique();
             $table->string('password');
             $table->bigInteger('product_id');
             $table->timestamps();

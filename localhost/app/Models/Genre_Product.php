@@ -7,5 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Genre_Product extends Model
 {
+
+
     use HasFactory;
 }

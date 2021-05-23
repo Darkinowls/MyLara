@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\PlatformResource;
 use App\Models\Platform;
 use Illuminate\Http\Request;
 
@@ -11,11 +12,11 @@ class PlatformController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Platform[]|\Illuminate\Database\Eloquent\Collection
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
     {
-        return Platform::all();
+        return PlatformResource::collection(Platform::all());
     }
 
     /**
@@ -33,11 +34,11 @@ class PlatformController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return Platform[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model
+     * @return PlatformResource
      */
     public function show($id)
     {
-        return Platform::all()->find($id);
+        return new PlatformResource(Platform::all()->find($id));
     }
 
     /**

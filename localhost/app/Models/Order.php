@@ -9,15 +9,29 @@ class Order extends Model
 {
     use HasFactory;
 
-    public function key(){
-        return $this->hasOne(Key::class);
+    protected $fillable = [
+
+        'id', 'user_id', 'key', 'account_id', 'price', 'created_at', 'updated_at'
+
+    ];
+
+    protected $hidden = [
+
+    ];
+
+
+    public function key()
+    {
+        return $this->belongsTo(Key::class);
     }
 
-    public function account(){
-        return  $this->hasOne(Account::class);
+    public function account()
+    {
+        return $this->belongsTo(Account::class);
     }
 
-    public function user(){
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 

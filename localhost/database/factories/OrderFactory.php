@@ -27,11 +27,14 @@ class OrderFactory extends Factory
     public function definition()
     {
 
+        $rand = rand(0, 1);
 
         return [
-            'account_id' => Account::all()->random(),
             'user_id' => User::all()->random(),
-            'key' => Key::all()->random()->key,
+
+            'account_id' => $rand ? Account::all()->random() : null,
+            'key' => $rand ? null : Key::all()->random()->key,
+
             'price' => rand(1, 20000),
         ];
     }

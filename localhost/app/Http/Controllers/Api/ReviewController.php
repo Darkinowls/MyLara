@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ReviewResource;
 use App\Models\Review;
 use Illuminate\Http\Request;
 
@@ -11,11 +12,11 @@ class ReviewController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Review[]|\Illuminate\Database\Eloquent\Collection
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
     {
-        return Review::all();
+        return ReviewResource::collection(Review::all());
     }
 
     /**
@@ -33,11 +34,11 @@ class ReviewController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return Review[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model
+     * @return ReviewResource
      */
     public function show($id)
     {
-        return Review::all()->find($id);
+        return new ReviewResource(Review::all()->find($id));
     }
 
     /**

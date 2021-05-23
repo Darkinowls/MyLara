@@ -29,14 +29,16 @@ class DatabaseSeeder extends Seeder
         Key::factory(40)->create();
         Review::factory(20)->create();
         Account::factory(30)->create();
-        Order::factory(8)->create();
         Genre::factory(5)->create();
+
+        Order::factory(30)->create();
+
 
 
         $genres = Genre::all();
 
         Product::all()->each(function ($user) use ($genres) {
-            $user->categories()->attach(
+            $user->genres()->attach(
                 $genres->random(rand(1, 3))->pluck('id')->toArray()
             );
         });

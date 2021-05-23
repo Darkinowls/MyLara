@@ -18,7 +18,7 @@ class Product extends Model
 
     public function platform()
     {
-        return $this->hasOne(Platform::class);
+        return $this->belongsTo(Platform::class);
     }
 
     public function accounts()

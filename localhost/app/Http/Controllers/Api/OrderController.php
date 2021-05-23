@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\OrderResource;
 use App\Models\Order;
 use Illuminate\Http\Request;
 
@@ -11,11 +12,11 @@ class OrderController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return Order[]|\Illuminate\Database\Eloquent\Collection
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
     public function index()
     {
-        return Order::all();
+        return OrderResource::collection(Order::all());
     }
 
     /**
@@ -33,11 +34,11 @@ class OrderController extends Controller
      * Display the specified resource.
      *
      * @param  int  $id
-     * @return Order[]|\Illuminate\Database\Eloquent\Collection|\Illuminate\Database\Eloquent\Model
+     * @return OrderResource
      */
     public function show($id)
     {
-        return Order::all()->find($id);
+        return new OrderResource(Order::all()->find($id));
     }
 
     /**
