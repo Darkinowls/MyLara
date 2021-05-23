@@ -45,3 +45,7 @@ Route::get('products/{from}/{to}', function ($from, $to) {
     for (;$from<=$to; $to--)array_push($ids,$to);
     return ProductResource::collection(Product::all()->find($ids));
 });
+
+Route::get('/', function () {
+    return view('welcome');
+});

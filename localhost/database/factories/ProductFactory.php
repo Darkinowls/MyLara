@@ -23,8 +23,8 @@ class ProductFactory extends Factory
     public function definition()
     {
 
-
         return [
+            'slug'=> $this->faker->unique()->domainWord,
             'price' => rand(100, 5000),
             'title' => $this->faker->unique()->word(),
             'description' => $this->faker->text(),

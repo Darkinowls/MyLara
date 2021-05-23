@@ -7,9 +7,11 @@ use App\Http\Requests\ProductRequest;
 use App\Http\Resources\ProductResource;
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
+
 
     /**
      * Display a listing of the resource.
@@ -44,11 +46,11 @@ class ProductController extends Controller
      * Display the specified resource.
      *
      * @param int $id
-     * @return ProductResource
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
      */
-    public function show($id)
+    public function show($slug)
     {
-        return new ProductResource(Product::all()->find($id));
+        return ProductResource::collection(Product::all()->where('slug',$slug));
     }
 
     /**
