@@ -7,34 +7,34 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
-
 class User extends Authenticatable
 {
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-    ];
-    protected $hidden = [
-        'password',
-        'remember_token',
-    ];
 
-    protected $casts = [
-        'email_verified_at' => 'datetime',
-    ];
-
-    function __construct($name, $email , $password )
+    use HasFactory;
+    
+    public function reviews()
     {
-        $this->fillable = [
-            'name' => $name,
-            'email' => $email ,
-            'password' => $password,
-        ];
+        return $this->hasMany(Review::class);
     }
 
-    public function comment(){
-        return $this->hasMany('app/models/Comment');
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
+
+    public function keys()
+    {
+        return $this->hasMany(Key::class);
+    }
+
+    public function account()
+    {
+        return $this->hasMany(Account::class);
+    }
+
+    public function products()
+    {
+        return $this->hasMany(Product::class);
     }
 
 }

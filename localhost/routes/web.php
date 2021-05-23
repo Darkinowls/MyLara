@@ -1,10 +1,6 @@
 <?php
 
-use App\Models\Good;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -17,19 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-
-Route::get('/', [App\Http\Controllers\MyController::class, 'welcome'])->name('welcome');
-
-Route::get('/good/{id}',[App\Http\Controllers\MyController::class, 'good'])->name('good/{id}');
-
-Route::get('/category/{id}',[App\Http\Controllers\MyController::class, 'category']);
-
-Route::post('/post', [App\Http\Controllers\MyController::class, 'post'])->name('post.comment');
-
-
-
-Auth::routes();
-
-
-
-
+Route::get('/', function () {
+    return view('welcome');
+});
