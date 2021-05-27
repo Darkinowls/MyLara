@@ -3,6 +3,7 @@
 namespace Database\Factories;
 
 use App\Models\Account;
+use App\Models\Platform;
 use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -27,8 +28,9 @@ class AccountFactory extends Factory
             'name' => $this->faker->userName(),
             'email' => $this->faker->unique()->safeEmail(),
             'balance' => rand(1, 20000),
-            'steam_id' => $this->faker->uuid(),
-            'password' => $this->faker->password(),
+            'platform_id' => Platform::all()->random(),
+            'email_password' => $this->faker->password(),
+            'platform_password' => $this->faker->password(),
             'product_id' => Product::all()->random(),
 
         ];

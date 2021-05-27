@@ -4,6 +4,7 @@ namespace App\Http\Resources;
 
 use App\Models\Product;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Support\Str;
 
 class ProductResource extends JsonResource
 {
@@ -22,12 +23,13 @@ class ProductResource extends JsonResource
             'title' => $this->title,
             'description' => $this->description,
             'photo' => $this->photo,
-            'platform_id' => $this->platform_id,
             'date' => $this->date,
             'genres' => GenreResource::collection($this->genres),
             'platform' => new PlatformResource($this->platform),
 
         ];
     }
+
+
 
 }

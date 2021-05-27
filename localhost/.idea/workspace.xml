@@ -20,14 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5c9acb7a-52ff-438c-bc7b-5e766ba6a013" name="Default Changelist" comment="BETA">
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/AccountRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/AccountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/AccountController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/AccountResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/AccountResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Resources/ProductResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/ProductResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Account.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AccountFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AccountFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_21_184123_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_21_184123_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_05_21_184924_create_accounts_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_05_21_184924_create_accounts_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,6 +204,10 @@
       <workItem from="1621665274419" duration="20210000" />
       <workItem from="1621704937388" duration="5749000" />
       <workItem from="1621755723307" duration="38545000" />
+      <workItem from="1621973307177" duration="694000" />
+      <workItem from="1622032662109" duration="1076000" />
+      <workItem from="1622046081003" duration="11680000" />
+      <workItem from="1622115470534" duration="8555000" />
     </task>
     <task id="LOCAL-00001" summary="Ya staravsa">
       <created>1621773920175</created>
@@ -243,14 +256,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="BETA" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1621759808502">
+    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1622116658134">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1621759808502" />
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1621793894004">
+    <state x="514" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1622116658134" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1622122589755">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621793894004" />
+    <state x="499" y="167" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1622122589755" />
     <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1621631744907">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -271,9 +284,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="572" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621778827463" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1621787987923">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1622047125105">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1621787987923" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1622047125105" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1622117839747">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1622117839747" />
   </component>
 </project>

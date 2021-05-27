@@ -19,9 +19,11 @@ class AccountResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'email' => $this->email,
-            'balance' => $this->balance,
-            'steam_id' => $this->steam_id,
-            'product_id' => $this->product_id
+            'balance' => $this->balance?? 0,
+            'email_password' => $this->email_password,
+            'platform_password' => $this->platform_password,
+            'platform_id' => $this->platform_id,
+            'product_id' => $this->product_id,
 
         ];
     }

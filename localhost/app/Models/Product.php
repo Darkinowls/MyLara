@@ -36,4 +36,6 @@ class Product extends Model
         return $this->belongsToMany(Genre::class);
     }
 
+
+
 }

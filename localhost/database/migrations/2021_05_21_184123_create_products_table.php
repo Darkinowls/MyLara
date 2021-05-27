@@ -20,7 +20,7 @@ class CreateProductsTable extends Migration
             $table->string('title')->unique();
             $table->text('description');
             $table->string('photo');
-            $table->bigInteger('platform_id');
+            $table->bigInteger('platform_id')->nullable();
             $table->string('date');
             $table->timestamps();
         });

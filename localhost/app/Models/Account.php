@@ -11,12 +11,13 @@ class Account extends Model
 
 
     protected $fillable = [
-        'id', 'name' , 'email' , 'balance', 'steam_id',
-        'product_id', 'created_at', 'updated_at'
+        'id', 'name' , 'email' , 'balance', 'platform_id',
+        'product_id','email_password',
+        'platform_password', 'created_at', 'updated_at'
         ];
 
     protected $hidden=[
-        'password'
+
     ];
 
 

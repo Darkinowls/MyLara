@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\AccountRequest;
 use App\Http\Resources\AccountResource;
 use App\Models\Account;
 use Illuminate\Http\Request;
@@ -23,11 +24,19 @@ class AccountController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return AccountResource
      */
-    public function store(Request $request)
+    public function store(AccountRequest $request)
     {
-        //
+
+        $account = new Account($request->all());
+        $account->id = Account::all()->count() + 1;
+        $account->created_at = now()->timestamp;
+
+
+        $account->save();
+
+        return new AccountResource($account);
     }
 
     /**
@@ -36,9 +45,9 @@ class AccountController extends Controller
      * @param  int  $id
      * @return AccountResource
      */
-    public function show($id)
+    public function show(Account $account)
     {
-        return new AccountResource(Account::all()->find($id));
+        return new AccountResource($account);
     }
 
     /**
@@ -46,11 +55,14 @@ class AccountController extends Controller
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  int  $id
-     * @return \Illuminate\Http\Response
+     * @return AccountResource
      */
-    public function update(Request $request, $id)
+    public function update(AccountRequest $request, Account $account)
     {
-        //
+
+        $account->update($request->validated());
+
+        return new AccountResource($account);
     }
 
     /**
@@ -59,8 +71,9 @@ class AccountController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Account $account)
     {
-        //
+        $account->delete();
+        return response(null, 204);
     }
 }

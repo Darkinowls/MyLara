@@ -11,11 +11,11 @@ class User extends Authenticatable
 {
 
     protected $fillable = [
-        'id', 'name', 'steam_id', 'balance' , 'created_at', 'updated_at'
+        'id', 'name', 'steam_id', 'balance', 'valance_wasted' , 'created_at', 'updated_at', 'password',
     ];
 
     protected $hidden = [
-        'password',
+
     ];
 
 

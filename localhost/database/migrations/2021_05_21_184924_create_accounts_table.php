@@ -16,11 +16,12 @@ class CreateAccountsTable extends Migration
         Schema::create('accounts', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('email')->unique();
-            $table->bigInteger('balance');
-            $table->string('steam_id')->unique();
-            $table->string('password');
-            $table->bigInteger('product_id');
+            $table->string('email');
+            $table->string('email_password');
+            $table->bigInteger('balance')->default(0);
+            $table->string('platform_id')->nullable();
+            $table->string('platform_password');
+            $table->bigInteger('product_id')->nullable();
             $table->timestamps();
         });
     }
